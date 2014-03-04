@@ -1,0 +1,15 @@
+<div class="hero-unit">
+  <p>You now have</p>
+  <ol ui-sortable ng-model='related'>
+    <li ng-repeat="thing in related">
+      <img ng-src="https://repository.library.brown.edu/viewers/image/thumbnail/{{thing.pid}}/" alt="{{thing.title}}" />{{thing.pid}}
+    </li>
+  </ol>
+</div>
+<div>
+  <ol ui-sortable ng-model='related'>
+    <li ng-repeat="thing in related">
+    {{thing.pid}}
+    </li>
+  </ol>
+</div>
